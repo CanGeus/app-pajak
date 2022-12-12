@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row">
         <?php foreach ($stnk as $k) : ?>
-            <div class="col-12 border mt-3 bg rounded">
+            <div class="col-12 border mt-5 bg rounded">
                 <div class="text-center text-uppercase font-weight-bolder mt-3">surat ketetapan kewajiban pembayaran pkb</div>
                 <div class="d-flex flex-row col-6">
                     <table class="table table-sm border col-12 mt-3">
@@ -16,11 +16,11 @@
                             </tr>
                             <tr>
                                 <td class="bg-dark text-light col-4 text-temp">nama pemilik</td>
-                                <td class=" text-uppercase"><?= $k['nama']; ?></td>
+                                <td class=" text-uppercase">aditya candra permana</td>
                             </tr>
                             <tr>
                                 <td class="bg-dark text-light col-4 text-temp">alamat</td>
-                                <td class=" text-uppercase"><?= $k['alamt']; ?></td>
+                                <td class=" text-uppercase">delepan rt.34 sidodadi masaran sragen</td>
                             </tr>
                         </tbody>
                     </table>
@@ -35,46 +35,54 @@
                                 <th scope="col"></th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td class="text-right border">0</td>
-                                <td class="text-right border">0</td>
-                                <td class="text-right border">0</td>
-                                <td class=" border text-left text-uppercase  font-weight-bolder">bbn-kb</td>
-                            </tr>
-                            <tr>
-                                <td class="text-right">
-                                    <!-- <input style="border: none; text-align:right;" type="text" value="10"> -->
-                                </td>
-                                <td class="text-right border">0</td>
-                                <td class="text-right border">0</td>
-                                <td class=" border text-left text-uppercase  font-weight-bolder">pkb</td>
-                            </tr>
-                            <tr>
-                                <td class="text-right border">0</td>
-                                <td class="text-right border">0</td>
-                                <td class="text-right border">0</td>
-                                <td class=" border text-left text-uppercase  font-weight-bolder">swdkllj</td>
-                            </tr>
-                            <tr>
-                                <td class="text-right border">0</td>
-                                <td class="text-right border">0</td>
-                                <td class="text-right border">0</td>
-                                <td class=" border text-left text-uppercase  font-weight-bolder">biaya adm.stnk</td>
-                            </tr>
-                            <tr>
-                                <td class="text-right border">0</td>
-                                <td class="text-right border">0</td>
-                                <td class="text-right border">0</td>
-                                <td class=" border text-left text-uppercase  font-weight-bolder">biaya adm.tnkb</td>
-                            </tr>
-                            <tr>
-                                <td class="text-right border">0</td>
-                                <td class="text-right border">0</td>
-                                <td class="text-right border">0</td>
-                                <td class=" border text-left text-uppercase  font-weight-bolder">jumlah</td>
-                            </tr>
-                        </tbody>
+                        <form action="" method="post">
+                            <tbody>
+                                <tr>
+                                    <td class="text-right border">0</td>
+                                    <td class="text-right border">0</td>
+                                    <td class="text-right border">0</td>
+                                    <td class=" border text-left text-uppercase  font-weight-bolder">bbn-kb</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right">
+                                        <input style="border: none; text-align:right;width:100px;height:fit-content;background-color:transparent; " type="text" value="1000" readonly>
+                                    </td>
+                                    <td class="text-right border">0</td>
+                                    <td class="text-right border">0</td>
+                                    <td class=" border text-left text-uppercase  font-weight-bolder">pkb</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right border">0</td>
+                                    <td class="text-right border">0</td>
+                                    <td class="text-right border">0</td>
+                                    <td class=" border text-left text-uppercase  font-weight-bolder">swdkllj</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right border">0</td>
+                                    <td class="text-right border">0</td>
+                                    <td class="text-right border">0</td>
+                                    <td class=" border text-left text-uppercase  font-weight-bolder">biaya adm.stnk</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right border">0</td>
+                                    <td class="text-right border">0</td>
+                                    <td class="text-right border">0</td>
+                                    <td class=" border text-left text-uppercase  font-weight-bolder">biaya adm.tnkb</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right border">0</td>
+                                    <td class="text-right border">0</td>
+                                    <td class="text-right border">0</td>
+                                    <td class=" border text-left text-uppercase  font-weight-bolder">jumlah</td>
+                                </tr>
+                                <tr class="mt-2">
+                                    <td class="bg-dark text-light col-4 text-temp">Status Pembayaran</td>
+                                    <td class=" text-uppercase"><?php $berlaku = $k['berlaku_sampai'];
+                                                                echo date('Y-m-d', strtotime('+1 year', strtotime($berlaku)));
+                                                                ?></td>
+                                </tr>
+                            </tbody>
+                        </form>
                     </table>
                 </div>
                 <div class="d-felx flex-row col-6">
@@ -157,13 +165,9 @@
                         </tr>
                     </tbody>
                 </table>
-                <a href="/detail/<?= $k['no_reg']; ?>" class="btn btn-success float-right mb-2">Detail</a>
             </div>
         <?php endforeach; ?>
     </div>
 </div>
-
-
-
 
 <?= $this->endSection(); ?>

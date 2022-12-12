@@ -38,8 +38,6 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Pages::index');
 
-$routes->get('/detail/(:segment)', 'Detail::index/$1');
-
 /*
  * --------------------------------------------------------------------
  * Additional Routing

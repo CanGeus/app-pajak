@@ -22,10 +22,9 @@ class Pages extends BaseController
 
     public function create()
     {
-        $stnk = $this->pagesModel->findAll();
         $data = [
             'title' => 'Home | Pajakin',
-            'stnk' => $stnk
+            'stnk' => $this->pagesModel->get_join(),
         ];
         return view('home', $data);
     }

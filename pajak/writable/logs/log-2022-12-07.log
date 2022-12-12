@@ -52,3 +52,78 @@ in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
 12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 02:52:25 --> Too few arguments to function App\Controllers\Detail::index(), 0 passed in E:\xampp\htdocs\app pajak\pajak\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Detail.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Detail->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 02:53:12 --> Undefined variable $stnk
+in APPPATH\Views\detail.php on line 7.
+ 1 APPPATH\Views\detail.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stnk', 'APPPATH\\Views\\detail.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('detail', [], true)
+ 5 APPPATH\Controllers\Detail.php(12): view('detail')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Detail->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 02:53:53 --> Undefined variable $stnk
+in APPPATH\Views\detail.php on line 7.
+ 1 APPPATH\Views\detail.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stnk', 'APPPATH\\Views\\detail.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('detail', [], true)
+ 5 APPPATH\Controllers\Detail.php(16): view('detail')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Detail->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 02:53:55 --> Undefined variable $stnk
+in APPPATH\Views\detail.php on line 7.
+ 1 APPPATH\Views\detail.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $stnk', 'APPPATH\\Views\\detail.php', 7)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\detail.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('detail', [], true)
+ 5 APPPATH\Controllers\Detail.php(16): view('detail')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Detail->index()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 04:54:19 --> Too few arguments to function App\Controllers\Detail::index(), 0 passed in E:\xampp\htdocs\app pajak\pajak\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Detail.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Detail->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 04:54:21 --> Undefined variable $db
+in APPPATH\Controllers\Detail.php on line 16.
+ 1 APPPATH\Controllers\Detail.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $db', 'APPPATH\\Controllers\\Detail.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Detail->index('ad1111cp')
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 05:07:01 --> Too few arguments to function App\Controllers\Detail::index(), 0 passed in E:\xampp\htdocs\app pajak\pajak\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Detail.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Detail->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 05:11:43 --> Too few arguments to function App\Controllers\Detail::index(), 0 passed in E:\xampp\htdocs\app pajak\pajak\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\Detail.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Detail->index()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-07 05:23:22 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 67108872 bytes)
+in SYSTEMPATH\Database\BaseBuilder.php on line 404.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

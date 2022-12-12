@@ -12,10 +12,11 @@ class PagesModel extends Model
 
     protected $allowedFields = ['no_reg', 'merek', 'type', 'jenis', 'warna', 'bahan_bakar', 'warna_tnkb', 'th_pembuatan', 'isi_silinder', 'no_rangka', 'no_mesin', 'th_perakitan'];
 
-    public function get_join()
+    public function join()
     {
-        return $this->db->table('stnk')
-            ->join('pemilik', 'pemilik.no_reg = stnk.no_reg')
-            ->get()->getResultArray();
+        $builder = $this->table('stnk');
+        $builder->select('*');
+        $builder->join('pemilik', 'stnk.no_reg = pemilik.no_reg');
+        $builder->get();
     }
 }

@@ -5,9 +5,9 @@
     <h1 class="text-center mt-3">PEMBAYARAN PAJAK KENDARAAN</h1>
     <div class="row">
         <div class="col mt-3">
-            <form method="POST" action="/pages/save">
+            <form method="POST" action="pages/save">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-4">
                         <label for="exampleFormControlSelect1">Merek</label>
                         <select class="form-control" id="exampleFormControlSelect1" name="merek">
                             <option value="">Choose...</option>
@@ -19,7 +19,12 @@
                             <option value="ducati">Ducati</option>
                         </select>
                     </div>
-                    <div class="col-6">
+
+                    <div class="col-4">
+                        <label for="no_reg">Plat Nomor</label>
+                        <input type="text" class="form-control" id="no_reg" name="no_reg">
+                    </div>
+                    <div class="col-4">
                         <label for="type">type</label>
                         <input type="text" class="form-control" id="type" name="type">
                     </div>
@@ -29,7 +34,8 @@
                         <label for="exampleFormControlSelect2">Jenis</label>
                         <select class="form-control" id="exampleFormControlSelect2" name="jenis">
                             <option value="">Choose...</option>
-                            <option value="sepeda_motor">Sepeda Motor</option>
+                            <option value="sepeda motor">Sepeda Motor</option>
+                            <option value="mobil">Mobil</option>
                         </select>
                     </div>
                     <div class="col-6">
@@ -110,12 +116,12 @@
                 </div>
                 <div class="row">
                     <div class="col-6">
-                        <label for="pajak">Pajak</label>
-                        <input type="text" class="form-control" id="pajak" name="pajak">
+                        <label for="pemilik">Nama Pemilik</label>
+                        <input type="text" class="form-control" id="pemilik" name="pemilik">
                     </div>
                     <div class="col-6">
-                        <label for="type">type</label>
-                        <input type="text" class="form-control" id="type" name="type">
+                        <label for="alamat_pemilik">Alamat Pemilik</label>
+                        <input type="text" class="form-control" id="alamat_pemilik" name="alamat_pemilik">
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary mt-3">Check</button>

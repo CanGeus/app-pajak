@@ -1,0 +1,31 @@
+.text-temp {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.bg {
+  background-color: rgba(191, 255, 234, 0.308);
+}
+
+.mtop {
+  margin-top: -120px;
+}
+.mtop-2 {
+    margin-top: -145px;
+    padding-right: 25px;
+    padding-right: 25px;
+}
+.mtop- {
+  margin-top: -298px;
+}
+
+label {
+  margin-top: 15px;
+}
+
+.pay {
+    background-color: transparent;
+    border: none;
+    text-align: right;
+    width: 70px;
+}
